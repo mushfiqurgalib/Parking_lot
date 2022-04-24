@@ -11,7 +11,7 @@ public class ParkingLot {
 
 	}
 	 public static void main(String[] args) {
-		String strReturn;
+		private String strReturn;
 		System.out.print("You want to parked your vehicle : ");
 		Scanner scan = new Scanner(System.in);
 		String userinput = scan.nextLine();
