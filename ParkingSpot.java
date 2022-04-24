@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class ParkingSpot{
 	
-	ArrayList<Integer> arr = new ArrayList<Integer> ();
+	private ArrayList<Integer> arr = new ArrayList<Integer> ();
 
 	ArrayList<Integer> iter=(ArrayList<Integer>) arr.iterator();
 	public int SpotNum(){
