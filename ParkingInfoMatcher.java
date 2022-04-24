@@ -58,7 +58,7 @@ public class ParkingInfoMatcher implements InputMatcher {
                             "\nTotal Time : " + time[0] + " Hour " + time[1] + " Minute " +
                             "\nTotal Amount : " + amount + " rupees\n");
 
-                    parkingspot.FreeSpot(assignedspotlist.get(spot).getSpotNumber());
+                   
                     assignedspotlist.remove(spot);
 
                     break;

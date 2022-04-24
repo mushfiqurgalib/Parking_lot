@@ -1,14 +1,16 @@
+import java.util.ArrayList;
+
 public class ParkingSpot{
 	
-	int[] arr = new int[10];
+	ArrayList<Integer> arr = new ArrayList<Integer> ();
 
-
+	ArrayList<Integer> iter=(ArrayList<Integer>) arr.iterator();
 	public int SpotNum(){
 		int spot = 0;
-		for (int i = 0; i < 10; i++){
-			if(arr[i] == 0) {
+		for (Integer i:arr){
+			if(i == 0) {
 				spot = i + 1;
-				arr[i] = i + 1;
+				i = i + 1;
 				break;
 			}
 		}
@@ -17,11 +19,11 @@ public class ParkingSpot{
 
 	public int si(){
 		int cheakspot = 0;
-		for(int i = 0; i < 10; i++){
-			if(arr[i] != 0){
+		for(Integer i:arr){
+			if(i != 0){
 				return 1;
 			}
-			else if(arr[i] == 0){
+			else if(i == 0){
 				cheakspot++;
 			}
 		}
@@ -30,15 +32,13 @@ public class ParkingSpot{
 
 	public void sipe(){
 		System.out.print("\nSpot status : ");
-		for(int i = 0; i < 10; i++){
-			System.out.print(arr[i]+"  ");
+		for(Integer i:arr){
+			System.out.print(i+"  ");
 		}
 		System.out.println();
 	}
 
-	public void FreeSpot (int num){
-		arr[num - 1] = 0;
-	}
+	
 
 
 }

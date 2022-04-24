@@ -12,12 +12,13 @@ public class ParkingLot {
 	}
 	 public static void main(String[] args) {
 		String strReturn;
+		System.out.print("You want to parked your vehicle : ");
 		Scanner scan = new Scanner(System.in);
 		String userinput = scan.nextLine();
 		
 			int size = userinput.length();
 			System.out.println(size);
-		System.out.print("You want to park your vehicle : ");
+		
 			
 		for(InputMatcher inputMatcher:inputMatchers){
 			
